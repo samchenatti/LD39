@@ -1,0 +1,934 @@
+{ "frames": {
+   "spiderboss 0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 1.ase": {
+    "frame": { "x": 0, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 2.ase": {
+    "frame": { "x": 0, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 3.ase": {
+    "frame": { "x": 0, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 4.ase": {
+    "frame": { "x": 0, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 5.ase": {
+    "frame": { "x": 0, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 6.ase": {
+    "frame": { "x": 0, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 7.ase": {
+    "frame": { "x": 0, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 8.ase": {
+    "frame": { "x": 0, "y": 2400, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 9.ase": {
+    "frame": { "x": 0, "y": 2700, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 10.ase": {
+    "frame": { "x": 0, "y": 3000, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 11.ase": {
+    "frame": { "x": 0, "y": 3300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 12.ase": {
+    "frame": { "x": 0, "y": 3600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 13.ase": {
+    "frame": { "x": 332, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 14.ase": {
+    "frame": { "x": 332, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 15.ase": {
+    "frame": { "x": 332, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 16.ase": {
+    "frame": { "x": 332, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 17.ase": {
+    "frame": { "x": 332, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 18.ase": {
+    "frame": { "x": 332, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 19.ase": {
+    "frame": { "x": 332, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 20.ase": {
+    "frame": { "x": 332, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 21.ase": {
+    "frame": { "x": 332, "y": 2400, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 22.ase": {
+    "frame": { "x": 332, "y": 2700, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 23.ase": {
+    "frame": { "x": 332, "y": 3000, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 24.ase": {
+    "frame": { "x": 332, "y": 3300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 25.ase": {
+    "frame": { "x": 332, "y": 3600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 26.ase": {
+    "frame": { "x": 664, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 27.ase": {
+    "frame": { "x": 664, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 28.ase": {
+    "frame": { "x": 664, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 29.ase": {
+    "frame": { "x": 664, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 30.ase": {
+    "frame": { "x": 664, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 31.ase": {
+    "frame": { "x": 664, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 32.ase": {
+    "frame": { "x": 664, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 33.ase": {
+    "frame": { "x": 664, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 34.ase": {
+    "frame": { "x": 664, "y": 2400, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 35.ase": {
+    "frame": { "x": 664, "y": 2700, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 36.ase": {
+    "frame": { "x": 664, "y": 3000, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 37.ase": {
+    "frame": { "x": 664, "y": 3300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 38.ase": {
+    "frame": { "x": 664, "y": 3600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 39.ase": {
+    "frame": { "x": 996, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 40.ase": {
+    "frame": { "x": 996, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 41.ase": {
+    "frame": { "x": 996, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 42.ase": {
+    "frame": { "x": 996, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 43.ase": {
+    "frame": { "x": 996, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 44.ase": {
+    "frame": { "x": 996, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 45.ase": {
+    "frame": { "x": 996, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 46.ase": {
+    "frame": { "x": 996, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 47.ase": {
+    "frame": { "x": 996, "y": 2400, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 48.ase": {
+    "frame": { "x": 996, "y": 2700, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 49.ase": {
+    "frame": { "x": 996, "y": 3000, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 50.ase": {
+    "frame": { "x": 996, "y": 3300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 51.ase": {
+    "frame": { "x": 996, "y": 3600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 52.ase": {
+    "frame": { "x": 1328, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 53.ase": {
+    "frame": { "x": 1328, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 54.ase": {
+    "frame": { "x": 1328, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 55.ase": {
+    "frame": { "x": 1328, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 56.ase": {
+    "frame": { "x": 1328, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 57.ase": {
+    "frame": { "x": 1328, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 58.ase": {
+    "frame": { "x": 1328, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 59.ase": {
+    "frame": { "x": 1328, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 60.ase": {
+    "frame": { "x": 1328, "y": 2400, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 61.ase": {
+    "frame": { "x": 1328, "y": 2700, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 62.ase": {
+    "frame": { "x": 1328, "y": 3000, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 63.ase": {
+    "frame": { "x": 1328, "y": 3300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 64.ase": {
+    "frame": { "x": 1328, "y": 3600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 65.ase": {
+    "frame": { "x": 1660, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 66.ase": {
+    "frame": { "x": 1660, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 67.ase": {
+    "frame": { "x": 1660, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 68.ase": {
+    "frame": { "x": 1660, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 69.ase": {
+    "frame": { "x": 1660, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 70.ase": {
+    "frame": { "x": 1660, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 71.ase": {
+    "frame": { "x": 1660, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 72.ase": {
+    "frame": { "x": 1660, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 73.ase": {
+    "frame": { "x": 1660, "y": 2400, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 74.ase": {
+    "frame": { "x": 1660, "y": 2700, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 75.ase": {
+    "frame": { "x": 1660, "y": 3000, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 76.ase": {
+    "frame": { "x": 1660, "y": 3300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 77.ase": {
+    "frame": { "x": 1660, "y": 3600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 78.ase": {
+    "frame": { "x": 1992, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 79.ase": {
+    "frame": { "x": 1992, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 80.ase": {
+    "frame": { "x": 1992, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 81.ase": {
+    "frame": { "x": 1992, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 82.ase": {
+    "frame": { "x": 1992, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 83.ase": {
+    "frame": { "x": 1992, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 84.ase": {
+    "frame": { "x": 1992, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 85.ase": {
+    "frame": { "x": 1992, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 86.ase": {
+    "frame": { "x": 1992, "y": 2400, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 87.ase": {
+    "frame": { "x": 1992, "y": 2700, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 88.ase": {
+    "frame": { "x": 1992, "y": 3000, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 89.ase": {
+    "frame": { "x": 1992, "y": 3300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 90.ase": {
+    "frame": { "x": 1992, "y": 3600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 91.ase": {
+    "frame": { "x": 2324, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 92.ase": {
+    "frame": { "x": 2324, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 93.ase": {
+    "frame": { "x": 2324, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 94.ase": {
+    "frame": { "x": 2324, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 95.ase": {
+    "frame": { "x": 2324, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 96.ase": {
+    "frame": { "x": 2324, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 97.ase": {
+    "frame": { "x": 2324, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 98.ase": {
+    "frame": { "x": 2324, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 99.ase": {
+    "frame": { "x": 2324, "y": 2400, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 100.ase": {
+    "frame": { "x": 2324, "y": 2700, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 101.ase": {
+    "frame": { "x": 2324, "y": 3000, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 102.ase": {
+    "frame": { "x": 2324, "y": 3300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 103.ase": {
+    "frame": { "x": 2324, "y": 3600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 104.ase": {
+    "frame": { "x": 2656, "y": 0, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 105.ase": {
+    "frame": { "x": 2656, "y": 300, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 106.ase": {
+    "frame": { "x": 2656, "y": 600, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 107.ase": {
+    "frame": { "x": 2656, "y": 900, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 108.ase": {
+    "frame": { "x": 2656, "y": 1200, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 109.ase": {
+    "frame": { "x": 2656, "y": 1500, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 110.ase": {
+    "frame": { "x": 2656, "y": 1800, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   },
+   "spiderboss 111.ase": {
+    "frame": { "x": 2656, "y": 2100, "w": 332, "h": 300 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 300 },
+    "sourceSize": { "w": 332, "h": 300 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.12-dev",
+  "image": "/home/figo/Develop/Python/LD39/Resources/spiderboss.png",
+  "format": "RGBA8888",
+  "size": { "w": 4096, "h": 4096 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "updiagonal_idle", "from": 0, "to": 9, "direction": "forward" },
+   { "name": "front_idle", "from": 0, "to": 9, "direction": "forward" },
+   { "name": "front_walk", "from": 10, "to": 15, "direction": "forward" },
+   { "name": "updiagonal_walk", "from": 10, "to": 15, "direction": "forward" },
+   { "name": "back_walk", "from": 16, "to": 21, "direction": "forward" },
+   { "name": "downdiagonal_walk", "from": 16, "to": 21, "direction": "forward" },
+   { "name": "back_idle", "from": 22, "to": 31, "direction": "forward" },
+   { "name": "downdiagonal_idle", "from": 22, "to": 31, "direction": "forward" },
+   { "name": "side_walk", "from": 32, "to": 37, "direction": "forward" },
+   { "name": "side_idle", "from": 38, "to": 47, "direction": "forward" },
+   { "name": "eye_attack", "from": 48, "to": 77, "direction": "forward" },
+   { "name": "smash_attack", "from": 78, "to": 89, "direction": "forward" },
+   { "name": "death", "from": 90, "to": 110, "direction": "forward" },
+   { "name": "deathidle", "from": 111, "to": 111, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "bg", "opacity": 255, "blendMode": "normal" },
+   { "name": "shadow", "opacity": 255, "blendMode": "normal" },
+   { "name": "patas", "opacity": 255, "blendMode": "normal" },
+   { "name": "esfera", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" },
+   { "name": "corpo", "opacity": 255, "blendMode": "normal" },
+   { "name": "eye", "opacity": 255, "blendMode": "normal" },
+   { "name": "Smoke1", "opacity": 255, "blendMode": "normal" },
+   { "name": "Smoke2", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}

@@ -1,0 +1,130 @@
+{ "frames": {
+   "spiderlaser 0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 1.ase": {
+    "frame": { "x": 0, "y": 800, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 2.ase": {
+    "frame": { "x": 0, "y": 1600, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 3.ase": {
+    "frame": { "x": 0, "y": 2400, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 4.ase": {
+    "frame": { "x": 0, "y": 3200, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 5.ase": {
+    "frame": { "x": 332, "y": 0, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 6.ase": {
+    "frame": { "x": 332, "y": 800, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 7.ase": {
+    "frame": { "x": 332, "y": 1600, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 8.ase": {
+    "frame": { "x": 332, "y": 2400, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 9.ase": {
+    "frame": { "x": 332, "y": 3200, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 10.ase": {
+    "frame": { "x": 664, "y": 0, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 11.ase": {
+    "frame": { "x": 664, "y": 800, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 12.ase": {
+    "frame": { "x": 664, "y": 1600, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   },
+   "spiderlaser 13.ase": {
+    "frame": { "x": 664, "y": 2400, "w": 332, "h": 800 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 332, "h": 800 },
+    "sourceSize": { "w": 332, "h": 800 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.12-dev",
+  "image": "/home/figo/Develop/Python/LD39/Resources/spiderlaser.png",
+  "format": "RGBA8888",
+  "size": { "w": 2048, "h": 4096 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "shoot", "from": 0, "to": 13, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "Layer 3", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 2", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}

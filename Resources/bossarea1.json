@@ -1,0 +1,25 @@
+{ "frames": {
+   "bossarea1.ase": {
+    "frame": { "x": 0, "y": 0, "w": 1280, "h": 720 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 1280, "h": 720 },
+    "sourceSize": { "w": 1280, "h": 720 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.12-dev",
+  "image": "/home/figo/Develop/Python/LD39/Resources/bossarea1.png",
+  "format": "RGBA8888",
+  "size": { "w": 2048, "h": 1024 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "chao", "opacity": 255, "blendMode": "normal" },
+   { "name": "ambiente", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}
