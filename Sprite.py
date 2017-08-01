@@ -90,7 +90,7 @@ class AnimatedSprite:
     def get_rect(self):
         return self.frames[self.actual_frame].get_rect()
 
-    def draw(self, coord, surface, left, lockOn=None):
+    def draw(self, coord, surface, left, lockOn=None, multiply=False):
         if self.frames[self.actual_frame].get_rect().colliderect(self.camera.camera_rect): print('not rect')
         if self.hide: return
 
@@ -103,7 +103,14 @@ class AnimatedSprite:
             if lockOn:
                 coord[0] = coord[0] - (self.frames[self.actual_frame].get_rect().width - lockOn.get_rect().width)
 
-            surface.blit(pygame.transform.flip(frame, True, False), coord, frame.get_rect())
+            if multiply:
+                surface.blit(pygame.transform.flip(frame, True, False), coord, frame.get_rect())
+            else:
+                surface.blit(pygame.transform.flip(frame, True, False), coord, frame.get_rect())
 
         else:
-            surface.blit(frame, coord, frame.get_rect())
+
+            if multiply:
+                surface.blit(frame, coord, frame.get_rect())
+            else:
+                surface.blit(frame, coord, frame.get_rect())

@@ -16,16 +16,43 @@ class Entity:
         self.__anim_state    = "side_walk"
         self.__visible       = True
         self.__diagonal      = False
+        self.__hitboxes      = []
 
         self.__jumping       = False
         self.__punching      = False
 
         self.__unblockable   = False
+        self.__blinking      = False
+        self.__blink_ticks   = 0
+        self.__blink_mask    = False
 
         self.ru = None
         self.rd = None
         self.rl = None
         self.rr = None
+
+    def blink(self):
+        self.__blinking    = True
+        self.__blink_ticks = 0
+        self.__blink_mask    = False
+
+
+    def get_hitboxes(self):
+        hitboxes = []
+        for hb in self.__hitboxes:
+            h = pygame.Rect((0, 0), (0, 0))
+
+            h.left   = hb.left + self.__coord[0]
+            h.top    = hb.top  + self.__coord[1]
+            h.width  = hb.width
+            h.height = hb.height
+
+            hitboxes.append(h)
+
+        return hitboxes
+
+    def add_hitbox(self, h):
+        self.__hitboxes.append(h)
 
     def set_visible(self, b):
         self.__visible = b
@@ -71,6 +98,18 @@ class Entity:
                 self.__punching = False
                 # a.set_actual_frame(0)
 
+        if self.__blinking:
+            self.__blink_ticks += 1
+
+            if self.__blink_ticks%61 == 0:
+                self.__blink_mask = False
+            else:
+                self.__blink_mask = True
+
+            if self.__blink_ticks == 300:
+                self.__blinking = False
+                self.__blink_mask  = True
+
     def is_punching(self):
         return self.__punching
 
@@ -95,15 +134,15 @@ class Entity:
         if self.__diagonal:
             if self.__diagonal[0] == "up":
                 if self.__diagonal[1] == "right":
-                    self.__animations["updiagonal_" + self.__actual_state].draw(self.__coord, screen, False)
+                    self.__animations["updiagonal_" + self.__actual_state].draw(self.__coord, screen, False, multiply=self.__blink_mask)
                 else:
-                    self.__animations["updiagonal_" + self.__actual_state].draw(self.__coord, screen, True)
+                    self.__animations["updiagonal_" + self.__actual_state].draw(self.__coord, screen, True, multiply=self.__blink_mask)
 
             elif self.__diagonal[0] == "down":
                 if self.__diagonal[1] == "right":
-                    self.__animations["downdiagonal_" + self.__actual_state].draw(self.__coord, screen, True)
+                    self.__animations["downdiagonal_" + self.__actual_state].draw(self.__coord, screen, True, multiply=self.__blink_mask)
                 else:
-                    self.__animations["downdiagonal_" + self.__actual_state].draw(self.__coord, screen, False)
+                    self.__animations["downdiagonal_" + self.__actual_state].draw(self.__coord, screen, False, multiply=self.__blink_mask)
             return
 
         if self.__looking == "right" or self.__looking == "left":
@@ -125,6 +164,9 @@ class Entity:
         #     pygame.draw.rect(screen, (0,255,255), self.rl)
         #     pygame.draw.rect(screen, (0,0,255), self.rr)
 
+        # for hb in self.get_hitboxes():
+            # pygame.draw.rect(screen, (255,255,255), hb)
+
 
     def set_level(self, level):
         self.__level = level
@@ -141,6 +183,13 @@ class Entity:
                 return
 
     def verify_block(self):
+        if self.__unblockable:
+            self.__blocked["left"]  = False
+            self.__blocked["right"] = False
+            self.__blocked["up"]    = False
+            self.__blocked["down"]  = False
+            return
+
         r  = self.__animations[self.__anim_state].get_rect()
 
         ru = pygame.Rect((self.__coord[0] + r.w/4, self.__coord[1] + 5),(r.w/2,r.h/8))
@@ -158,7 +207,14 @@ class Entity:
         self.__blocked["up"]    = False
         self.__blocked["down"]  = False
 
-        for block in self.__level.get_tile_map().block_objects:
+        block_list = []
+        for e in self.__level.get_enemy_list():
+            block_list += e.get_hitboxes()
+
+        block_list += self.__level.get_tile_map().block_objects
+
+
+        for block in block_list:
             if block.colliderect(rl):
                 self.__blocked["left"] = True
 
@@ -170,6 +226,7 @@ class Entity:
 
             if block.colliderect(rr):
                 self.__blocked["right"] = True
+
 
     def is_visible(self):
         return self.__visible
@@ -238,7 +295,7 @@ class Entity:
             p = pygame.Rect(self.__coord[0], self.__coord[1], self.get_rect()[2], self.get_rect()[3])
             for e in self.__level.get_enemy_list():
                 if e.test_collide(p):
-                    e.deal_damage(0.1)
+                    e.deal_damage(0.05)
 
             self.__jumping = True
 
@@ -274,6 +331,7 @@ class Entity:
 
     def distance_from_player(self):
         p = self.__level.get_player_list()[0].get_coord()
+
         return self.dist([self.__coord[0], self.__coord[1]], [p[0], p[1]])
 
     def test_collide(self, r1):
@@ -303,3 +361,6 @@ class Entity:
 
     def is_blocked(self):
         return self.__blocked["up"] or self.__blocked["down"] or self.__blocked["left"] or self.__blocked["right"]
+
+    def get_frame_base(self):
+        return self.__coord[1] # + self.get_rect().h

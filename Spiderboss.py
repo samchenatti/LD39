@@ -1,6 +1,7 @@
 from Character import Character
 from Sprite import AnimatedSprite
 from Text import Text
+from Player import HPDisplay
 import random, pygame
 
 class Spiderboss(Character):
@@ -11,7 +12,7 @@ class Spiderboss(Character):
         self.level = level
         self.wait_ticks = 0
         self.state      = "idle"
-        self.HPDisplay  = HPDisplay(self, level)
+        self.HPDisplay  = HPDisplay(self, level, offset=[15, 187], color=(255, 220, 220))
         self.lock_control = False
 
     def load_resources(self):
@@ -27,6 +28,17 @@ class Spiderboss(Character):
         # self.set_unbockable(True)
         self.walk_to()
 
+        self.add_hitbox(pygame.Rect((96, 228), (151, 23)))
+        self.add_hitbox(pygame.Rect((63, 197), (218, 33)))
+        self.add_hitbox(pygame.Rect((44, 164), (253, 33)))
+        #Patas
+        self.add_hitbox(pygame.Rect((297, 234), (19, 48)))
+        self.add_hitbox(pygame.Rect((9, 234), (21, 49)))
+        #CorpoSuperior
+        self.add_hitbox(pygame.Rect((38, 84), (265, 81)))
+
+        self.set_unbockable(True)
+
         self.dead = False
 
     def logic(self):
@@ -36,6 +48,7 @@ class Spiderboss(Character):
 
         if self.get_hp() <= 0:
             self.change_animstate("death")
+            self.shooting = False
 
             if self.get_actual_frame() == 15:
                 self.dead = True
@@ -46,9 +59,10 @@ class Spiderboss(Character):
             return
 
 
-        if self.distance_from_player() <= 100 and self.state == "idle":
-            if random.randint(0, 1) == 1:
-                self.state = "smash"
+        if self.state == "repell":
+            self.change_animstate("repell")
+            if self.get_actual_frame() == self.get_total_frames() - 1:
+                self.state = "idle"
 
         if self.state == "smash":
             self.change_animstate("smash_attack")
@@ -74,15 +88,31 @@ class Spiderboss(Character):
                 print("Reached")
                 self.wait_ticks = 0
 
-                self.change_state == "move"
-                self.walk_to()
+                c = pygame.Rect((0,0), (0,0))
+
+                c.x = self.player.get_coord()[0]
+                c.y = self.player.get_coord()[1]
+                c.width  = self.player.get_rect().width
+                c.height = self.player.get_rect().height
+
+                if self.test_collide(c):
+                    self.state = "repell"
+
+                    if self.player.get_coord()[0] < self.get_coord()[0] + self.get_rect().width/2:
+                        self.player.repell(500, "left")
+                    else:
+                        self.player.repell(500, "right")
+
+                    self.player.deal_damage(0.21)
+                else:
+                    self.change_state == "move"
+                    self.walk_to()
 
 
         if self.state == "eye_attack":
             self.change_animstate("eye_attack")
             self.laser.logic()
 
-            print(self.player.test_collide(self.laser.get_damage_area()))
             if self.player.test_collide(self.laser.get_damage_area()) and not self.player_hitted:
                 self.player.deal_damage(0.3)
                 self.player_hitted = True
@@ -195,34 +225,3 @@ class Laser():
             self.p[0] -= 5
             self.p[1] += 190
             self.laser.draw(self.p, screen, False)
-
-
-class HPDisplay:
-    def __init__(self, target, level):
-        self.__level    = level
-        self.__target   = target
-        self.__hp_label = Text("100%", 15, [0, 0], level.get_camera(), color=(172, 50, 50))
-        self.show = True
-
-    def logic(self):
-        return
-
-    def draw(self, screen):
-        if self.show == False: return
-
-        s = str(int(self.__target.get_hp()/self.__target.get_max_hp() * 100)) + "%"
-
-        self.__hp_label = Text(s, 15, [0, 0], self.__level.get_camera(), color=(172, 50, 50))
-
-        p = [0, 0]
-        c = self.__target.get_coord()
-
-        p[0] = c[0]/2 + 35
-        p[1] = c[1] + 187
-
-        # print(self.__target.get_rect())
-        p[0] = p[0] + self.__target.get_rect()[2]/2
-
-        self.__hp_label.draw(screen, p)
-
-        # self.__hologram["front_idle"].draw(self.__target.get_coord(), screen, False)

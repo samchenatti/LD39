@@ -60,7 +60,7 @@ class BossArea1(Level):
 
 class Dialog:
     def __init__(self, target, dialog):
-        self.label  = pygame.image.load("Resources/spidertitles.png")
+        self.label  = pygame.image.load("Resources/spidertitles.png").convert()
         self.label.set_colorkey((255,0,255))
         self.target = target
 
@@ -70,6 +70,6 @@ class Dialog:
         p = [0, 0]
 
         p[0] = t[0] + self.target.get_rect()[2] + 5
-        p[1] = t[1] - self.target.get_rect()[3]/2 + 60
+        p[1] = t[1] - self.target.get_rect()[3]/2 + 120
 
         screen.blit(self.label, p, self.label.get_rect())

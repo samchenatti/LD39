@@ -3,7 +3,7 @@ from Camera import Camera
 from TileSet import TileSet
 from Input import Input
 from Player import Player
-import pygame
+import pygame, operator
 
 class Level:
     def __init__(self, game, tilemap):
@@ -29,7 +29,6 @@ class Level:
         return self.__enemys
 
     def remove_object(self, o):
-        print(self.__objects)
         self.__objects.remove(o)
 
     def add_player(self, p):
@@ -92,17 +91,24 @@ class Level:
     def draw(self, screen):
         self.__tile_map.draw(screen)
 
-        for o in self.__objects:
-            o.draw(screen)
+        draw_order = self.__objects + self.__players + self.__enemys + self.__NPCs
+        draw_order.sort(key=operator.methodcaller("get_frame_base"), reverse=False)
 
-        for p in self.__players:
-            p.draw(screen)
+        for d in draw_order:
+            d.draw(screen)
 
-        for e in self.__enemys:
-            e.draw(screen)
 
-        for n in self.__NPCs:
-            n.draw(screen)
+        # for o in self.__objects:
+        #     o.draw(screen)
+        #
+        # for p in self.__players:
+        #     p.draw(screen)
+        #
+        # for e in self.__enemys:
+        #     e.draw(screen)
+        #
+        # for n in self.__NPCs:
+        #     n.draw(screen)
 
         for n in self.__NPCs:
             n.draw_dialog(screen)

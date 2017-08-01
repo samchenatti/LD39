@@ -12,7 +12,7 @@
          "y":0
         }, 
         {
-         "image":"bossarea1.png",
+         "image":"..\/..\/LD39\/Resources\/bossarea1.png",
          "name":"Camada de Imagem 1",
          "opacity":1,
          "type":"imagelayer",
@@ -25,103 +25,15 @@
          "name":"boss",
          "objects":[
                 {
-                 "height":116.347140039448,
+                 "height":230.347,
                  "id":18,
                  "name":"",
                  "rotation":0,
                  "type":"bossarea",
                  "visible":true,
-                 "width":1012.72596795021,
-                 "x":21.6370160248946,
-                 "y":129.826429980276
-                }, 
-                {
-                 "height":76,
-                 "id":19,
-                 "name":"",
-                 "rotation":0,
-                 "type":"block",
-                 "visible":true,
-                 "width":1276,
-                 "x":4,
-                 "y":-2
-                }, 
-                {
-                 "height":70,
-                 "id":20,
-                 "name":"",
-                 "rotation":0,
-                 "type":"block",
-                 "visible":true,
-                 "width":650,
-                 "x":-8,
-                 "y":650
-                }, 
-                {
-                 "height":26,
-                 "id":21,
-                 "name":"",
-                 "rotation":0,
-                 "type":"block",
-                 "visible":true,
-                 "width":290,
-                 "x":652,
-                 "y":694
-                }, 
-                {
-                 "height":84,
-                 "id":22,
-                 "name":"",
-                 "rotation":0,
-                 "type":"block",
-                 "visible":true,
-                 "width":146,
-                 "x":1136,
-                 "y":634
-                }, 
-                {
-                 "height":88,
-                 "id":23,
-                 "name":"",
-                 "rotation":0,
-                 "type":"block",
-                 "visible":true,
-                 "width":100,
-                 "x":1178,
-                 "y":544
-                }, 
-                {
-                 "height":44,
-                 "id":24,
-                 "name":"",
-                 "rotation":0,
-                 "type":"block",
-                 "visible":true,
-                 "width":108,
-                 "x":-8,
-                 "y":614
-                }, 
-                {
-                 "height":556,
-                 "id":25,
-                 "name":"",
-                 "rotation":0,
-                 "type":"block",
-                 "visible":true,
-                 "width":6,
-                 "x":-2,
-                 "y":76
-                }, 
-                {
-                 "height":556,
-                 "id":27,
-                 "name":"",
-                 "rotation":0,
-                 "type":"block",
-                 "visible":true,
-                 "width":6,
-                 "x":1274.33333333333,
-                 "y":60.6666666666666
+                 "width":916.726,
+                 "x":11.637,
+                 "y":67.826
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -129,7 +41,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":28,
+ "nextobjectid":19,
  "orientation":"orthogonal",
  "renderorder":"left-up",
  "tiledversion":"1.0.2",
@@ -138,7 +50,7 @@
         {
          "columns":10,
          "firstgid":1,
-         "image":"city_walkpath.png",
+         "image":"..\/..\/LD39\/Resources\/city_walkpath.png",
          "imageheight":100,
          "imagewidth":100,
          "margin":0,

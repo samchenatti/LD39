@@ -9,7 +9,7 @@ class Game:
 
         self.__width        = 1280
         self.__height       = 720
-        self.__window_flags = pygame.HWSURFACE|pygame.DOUBLEBUF
+        self.__window_flags = pygame.FULLSCREEN|pygame.HWSURFACE|pygame.DOUBLEBUF
 
         self.__screen       = pygame.display.set_mode((self.__width, self.__height ), self.__window_flags)
 

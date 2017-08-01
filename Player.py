@@ -9,7 +9,7 @@ class Player(Character):
         self.__input = input
         self.__lock_control = True
 
-        self.__hp_marker = HPDisplay(self, level)
+        self.__hp_marker = HPDisplay(self, level, offset=[0, 0])
 
         self.set_speed(2)
         self.set_coord([100, 100])
@@ -85,12 +85,16 @@ class Player(Character):
 
 
 class HPDisplay:
-    def __init__(self, target, level):
+    def __init__(self, target, level, offset=None, color=(255, 255, 255)):
         self.__level    = level
         self.__target   = target
         self.__hp_label = Text("100%", 15, [0, 0], level.get_camera())
         self.__hologram = AnimatedSprite.load_data("hologram", self.__level.get_camera())
+        self.__color    = color
         self.show = True
+        self.icon = pygame.image.load("Resources/energyicon.png").convert()
+        self.icon.set_colorkey((255,0,255))
+        self.offset = offset
 
     def logic(self):
         return
@@ -98,19 +102,28 @@ class HPDisplay:
     def draw(self, screen):
         if self.show == False: return
 
-        s = str(int(self.__target.get_hp()/self.__target.get_max_hp() * 100)) + "%"
+        n = int(self.__target.get_hp()/self.__target.get_max_hp() * 100)
+        s = str(n) + "%"
 
-        self.__hp_label = Text(s, 15, [0, 0], self.__level.get_camera())
+        self.__hp_label = Text(s, 15, [0, 0], self.__level.get_camera(), color=self.__color)
 
         p = [0, 0]
         c = self.__target.get_coord()
 
-        p[0] = c[0]
+        p[0] = c[0] + self.__target.get_rect()[2]/2
         p[1] = c[1]
 
-        # print(self.__target.get_rect())
-        p[0] = p[0] + self.__target.get_rect()[2]/2
+
+        if self.offset:
+            p[0] += self.offset[0]
+            p[1] += self.offset[1]
 
         self.__hp_label.draw(screen, p)
 
-        # self.__hologram["front_idle"].draw(self.__target.get_coord(), screen, False)
+
+        if n >= 100:
+            p[0] -= 25
+        else:
+            p[0] -= 22
+        p[1] -= 5
+        screen.blit(self.icon, p, self.icon.get_rect())
