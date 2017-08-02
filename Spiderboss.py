@@ -113,9 +113,12 @@ class Spiderboss(Character):
             self.change_animstate("eye_attack")
             self.laser.logic()
 
-            if self.player.test_collide(self.laser.get_damage_area()) and not self.player_hitted:
-                self.player.deal_damage(0.3)
-                self.player_hitted = True
+            if not self.player_hitted and self.laser.dealing_damage and self.laser.shooting:
+                for hb in self.laser.get_damage_area():
+                    print(self.player.test_collide(hb))
+                    if self.player.test_collide(hb):
+                        self.player.deal_damage(0.3)
+                        self.player_hitted = True
 
             if self.get_actual_frame() == 11:
                 self.laser.shoot()
@@ -127,6 +130,25 @@ class Spiderboss(Character):
 
 
         if self.state == "move":
+            c = pygame.Rect((0,0), (0,0))
+
+            c.x = self.player.get_coord()[0]
+            c.y = self.player.get_coord()[1]
+            c.width  = self.player.get_rect().width
+            c.height = self.player.get_rect().height
+
+
+            if self.test_collide(c):
+                self.state = "repell"
+
+                if self.player.get_coord()[0] < self.get_coord()[0] + self.get_rect().width/2:
+                    self.player.repell(500, "left")
+                else:
+                    self.player.repell(500, "right")
+
+                    self.player.deal_damage(0.21)
+
+
             if self.get_coord()[0] < self.__dest[0]:
                 self.walk("right")
             self.arrived()
@@ -189,6 +211,16 @@ class Laser():
         self.font = font
         self.laser = AnimatedSprite.load_data("spiderlaser", camera)["shoot"]
         self.shooting = False
+        self.dealing_damage = False
+
+        self.hba = pygame.Rect((0, 0), (0,0))
+        self.hbb = pygame.Rect((0, 0), (0,0))
+        self.hbc = pygame.Rect((0, 0), (0,0))
+        self.hbd = pygame.Rect((0, 0), (0,0))
+        self.hbe = pygame.Rect((0, 0), (0,0))
+        self.hbf = pygame.Rect((0, 0), (0,0))
+        self.hbg = pygame.Rect((0, 0), (0,0))
+        self.hbh = pygame.Rect((0, 0), (0,0))
 
     def shoot(self):
         self.shooting = True
@@ -201,20 +233,41 @@ class Laser():
         if self.laser.get_actual_frame() == self.laser.get_total_frames() - 1:
             self.shooting = False
 
+        if self.laser.get_actual_frame() >= 0 and self.laser.get_actual_frame() <= 7:
+            self.dealing_damage = True
+        else:
+            self.dealing_damage = False
+
     def get_damage_area(self):
-        if self.shooting:
-            if self.laser.get_actual_frame() >= 0 and self.laser.get_actual_frame() <= 7:
-                r = self.laser.get_rect()
-                c = [0, 0, 0, 0]
+        if self.shooting and self.dealing_damage:
+            r = self.laser.get_rect()
+            c = [0, 0, 0, 0]
 
-                c[0] = self.font.get_coord()[0]
-                c[1] = self.font.get_coord()[1]
-                c[2] = r[2]
-                c[3] = r[3]
+            c[0] = self.font.get_coord()[0] - 5
+            c[1] = self.font.get_coord()[1] + 190
+            c[2] = r[2]
+            c[3] = r[3]
 
-                return pygame.Rect(c[0], c[1], c[2], c[3])
-            else:
-                return None
+            hitboxes = []
+
+            self.hba = pygame.Rect((c[0] + 30, c[1] + 628), (279, 171))
+            self.hbb = pygame.Rect((c[0] + 66, c[1] + 482), (211, 147))
+            self.hbc = pygame.Rect((c[0] + 90, c[1] + 370), (166, 110))
+            self.hbd = pygame.Rect((c[0] + 109, c[1] + 276), (128, 95))
+            self.hbe = pygame.Rect((c[0] + 126, c[1] + 181), (92, 101))
+            self.hbf = pygame.Rect((c[0] + 143, c[1] + 113), (62, 73))
+            self.hbg = pygame.Rect((c[0] + 155, c[1] + 55), (38, 64))
+
+            hitboxes.append(self.hba)
+            hitboxes.append(self.hbb)
+            hitboxes.append(self.hbc)
+            hitboxes.append(self.hbd)
+            hitboxes.append(self.hbe)
+            hitboxes.append(self.hbf)
+            hitboxes.append(self.hbg)
+            hitboxes.append(self.hbh)
+
+            return hitboxes
 
     def draw(self, screen):
         if self.shooting:
@@ -225,3 +278,12 @@ class Laser():
             self.p[0] -= 5
             self.p[1] += 190
             self.laser.draw(self.p, screen, False)
+
+            # pygame.draw.rect(screen, (255,255,255), self.hba)
+            # pygame.draw.rect(screen, (255,255,255), self.hbb)
+            # pygame.draw.rect(screen, (255,255,255), self.hbc)
+            # pygame.draw.rect(screen, (255,255,255), self.hbd)
+            # pygame.draw.rect(screen, (255,255,255), self.hbe)
+            # pygame.draw.rect(screen, (255,255,255), self.hbf)
+            # pygame.draw.rect(screen, (255,255,255), self.hbg)
+            # pygame.draw.rect(screen, (255,255,255), self.hbh)

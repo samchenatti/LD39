@@ -359,7 +359,10 @@ class Entity:
 
         return math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2))
 
-    def is_blocked(self):
+    def is_blocked(self, direction=None):
+        if direction:
+            return self.__blocked[direction]
+            
         return self.__blocked["up"] or self.__blocked["down"] or self.__blocked["left"] or self.__blocked["right"]
 
     def get_frame_base(self):

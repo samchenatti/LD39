@@ -52,10 +52,18 @@ class Character(Entity):
             offset[1] = c[1]
 
             if c[0] > self.__repelling_target:
-                c[0] -= 3 + self.__repelling_acc
+                if self.is_blocked("left"):
+                    self.__repelling = False
+                    self.lock_control(False)
+                else:
+                    c[0] -= 3 + self.__repelling_acc
 
             if c[0] < self.__repelling_target:
-                c[0] += 3 + self.__repelling_acc
+                if self.is_blocked("right"):
+                    self.__repelling = False
+                    self.lock_control(False)
+                else:
+                    c[0] += 3 + self.__repelling_acc
 
             if self.__repelling_acc >= 0:
                 self.__repelling_acc -= 0.1

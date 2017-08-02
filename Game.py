@@ -2,10 +2,13 @@ import pygame
 from Warpzone import Warpzone
 from BossArea1 import BossArea1
 from Intro import Intro
+from Text import Text
 
 class Game:
     def __init__(self):
         pygame.init()
+
+        self.__status_text  = Text("Pre alpha (0.0.1) | FPS: ", 10, [15, 15])
 
         self.__width        = 1280
         self.__height       = 720
@@ -21,7 +24,7 @@ class Game:
 
 
         self.global_variables = {}
-        self.global_variables["played_intro"] = False
+        self.global_variables["played_intro"] = True
 
         self.load_scenes()
 
@@ -38,11 +41,14 @@ class Game:
             self.__screen.fill(self.__fill_color)
             self.__actual_scene.draw(self.__screen)
 
+
+            self.__status_text  = Text("Pre alpha (0.0.1) | FPS: " + str(int(self.__clock.get_fps())), 20, [100, 15])
+            self.__status_text.draw(self.__screen, [120, 20])
+
             pygame.display.flip()
 
             self.__clock.tick(60)
 
-            # print(self.__clock.get_fps())
 
     def load_scenes(self):
         w  = Warpzone(self)
@@ -73,5 +79,6 @@ class Game:
         print("Fill changed")
         self.__fill_color = c
 
-g = Game()
-g.main_loop()
+if __name__ == '__main__':
+    g = Game()
+    g.main_loop()

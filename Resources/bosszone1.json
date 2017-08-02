@@ -31,9 +31,118 @@
                  "rotation":0,
                  "type":"bossarea",
                  "visible":true,
-                 "width":916.726,
-                 "x":11.637,
-                 "y":67.826
+                 "width":1022.726,
+                 "x":20.637,
+                 "y":77.826
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "name":"Camada de Objetos 2",
+         "objects":[
+                {
+                 "height":18.6666666666667,
+                 "id":19,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":1365.33333333333,
+                 "x":2.66666666666667,
+                 "y":44
+                }, 
+                {
+                 "height":648,
+                 "id":21,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":5,
+                 "x":1,
+                 "y":70
+                }, 
+                {
+                 "height":648,
+                 "id":22,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":5,
+                 "x":1274.83333333333,
+                 "y":42.6666666666666
+                }, 
+                {
+                 "height":74,
+                 "id":23,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":132,
+                 "x":1150,
+                 "y":644
+                }, 
+                {
+                 "height":78,
+                 "id":24,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":94,
+                 "x":1190,
+                 "y":564
+                }, 
+                {
+                 "height":14,
+                 "id":25,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":886,
+                 "x":4,
+                 "y":704
+                }, 
+                {
+                 "height":20,
+                 "id":28,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":676,
+                 "x":2,
+                 "y":686
+                }, 
+                {
+                 "height":76,
+                 "id":29,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":108,
+                 "x":10,
+                 "y":620
+                }, 
+                {
+                 "height":62,
+                 "id":30,
+                 "name":"",
+                 "rotation":0,
+                 "type":"block",
+                 "visible":true,
+                 "width":274,
+                 "x":124,
+                 "y":652
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -41,7 +150,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":19,
+ "nextobjectid":32,
  "orientation":"orthogonal",
  "renderorder":"left-up",
  "tiledversion":"1.0.2",

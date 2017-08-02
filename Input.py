@@ -43,7 +43,7 @@ class Input():
             else:
                 self.states["K_RUN"] = False
 
-            if keys[pygame.K_RETURN]:
+            if keys[pygame.K_a]:
                 self.states["K_PUNCH"] = True
             else:
                 self.states["K_PUNCH"] = False

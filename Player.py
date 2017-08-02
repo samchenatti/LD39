@@ -62,8 +62,8 @@ class Player(Character):
             self.walk("down")
 
 
-        if keys["K_JUMP"]:
-            self.walk("jump")
+        # if keys["K_JUMP"]:
+        #     self.walk("jump")
 
         if keys["K_PUNCH"]:
             self.walk("punch")
